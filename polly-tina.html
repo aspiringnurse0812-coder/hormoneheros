@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meet Polly & Turner 💗</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Page-only styling (safe + doesn’t break your site) */
+    .charGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+      margin-top:16px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .charGrid{ grid-template-columns:1fr; }
+    }
+    .charCard{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+    }
+    .charImg{
+      width:180px;
+      max-width:40%;
+      border-radius:18px;
+      background: rgba(255,255,255,.7);
+      border:1px solid rgba(255,79,163,.18);
+      box-shadow: var(--shadow);
+      padding:10px;
+      flex:0 0 auto;
+    }
+    .charImg img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .charInfo h2{ margin:0 0 6px; }
+    .charInfo .tagRow{
+      display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;
+    }
+    .tag{
+      font-size:13px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(255,79,163,.10);
+      border:1px solid rgba(255,79,163,.18);
+    }
+    .list{
+      margin:8px 0 0;
+      padding-left:18px;
+      line-height:1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <div class="header">
+    <div class="nav container">
+      <div class="brand">
+        <div class="logo">💗</div>
+        <div>
+          <div style="font-weight:900;">Hormone Adventure</div>
+          <div class="small">Meet the characters</div>
+        </div>
+      </div>
+
+      <div class="navlinks">
+        <a class="pill" href="index.html">Home</a>
+        <a class="pill" href="polly-tina.html">Polly & Turner</a>
+        <a class="pill" href="faq.html">FAQ</a>
+        <a class="pill" href="video1.html">Video 1</a>
+        <a class="pill" href="video2.html">Video 2</a>
+        <a class="pill" href="video3.html">Video 3</a>
+        <a class="pill" href="video4.html">Video 4</a>
+        <a class="pill" href="video5.html">Video 5</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="container hero">
+    <div class="heroCard">
+      <h1>Meet Polly & Turner 💗</h1>
+      <p class="subtitle">
+        These two characters guide you through the website. They help explain hormone imbalances in a clear,
+        friendly way — and represent two real conditions we talked about: <strong>PCOS</strong> and <strong>Turner Syndrome</strong>.
+      </p>
+      <div class="badges">
+        <div class="badge">✨ Cute guides</div>
+        <div class="badge">🧠 Clear explanations</div>
+        <div class="badge">💗 Respectful + educational</div>
+      </div>
+    </div>
+
+    <!-- CHARACTER GRID -->
+    <div class="charGrid">
+
+      <!-- POLLY -->
+      <div class="card charCard">
+        <div class="charImg">
+          <!-- Make sure this file is in your folder -->
+          <img src="polly.png" alt="Polly character" />
+        </div>
+
+        <div class="charInfo">
+          <h2>Polly 🧁</h2>
+          <p class="small">
+            Polly is your calm, supportive guide. She breaks big science ideas into simple words, and reminds you
+            that learning about your body should feel safe and empowering.
+          </p>
+
+          <div class="tagRow">
+            <span class="tag">Condition: PCOS</span>
+            <span class="tag">Vibe: gentle coach</span>
+            <span class="tag">Role: explains + reviews</span>
+          </div>
+
+          <hr />
+
+          <h2 style="font-size:18px;">What Polly has (PCOS)</h2>
+          <p class="small">
+            <strong>PCOS</strong> (Polycystic Ovary Syndrome) is a hormone-related condition that can affect things
+            like menstrual cycles and how the body handles insulin. People can experience it differently.
+          </p>
+
+          <div class="small"><strong>Common things PCOS can involve:</strong></div>
+          <ul class="list small">
+            <li>Irregular or unpredictable periods</li>
+            <li>Hormone level changes that can affect skin/hair</li>
+            <li>Insulin resistance (the body may struggle to use insulin well)</li>
+            <li>Symptoms that improve with support like lifestyle changes and/or medication (doctor-guided)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TURNER -->
+      <div class="card charCard">
+        <div class="charImg">
+          <!-- Make sure this file is in your folder -->
+          <img src="turner.png" alt="Turner character" />
+        </div>
+
+        <div class="charInfo">
+          <h2>Turner 💅</h2>
+          <p class="small">
+            Turner is your confident, bold guide — she makes facts memorable and reminds you that health differences
+            are nothing to be ashamed of. She keeps the energy up and helps you remember key points.
+          </p>
+
+          <div class="tagRow">
+            <span class="tag">Condition: Turner Syndrome</span>
+            <span class="tag">Vibe: confident diva</span>
+            <span class="tag">Role: key facts + hype</span>
+          </div>
+
+          <hr />
+
+          <h2 style="font-size:18px;">What Turner has (Turner Syndrome)</h2>
+          <p class="small">
+            <strong>Turner Syndrome</strong> is a genetic condition that happens when a person is missing all or part
+            of an X chromosome. It can affect growth and how the body develops, and support is individualized.
+          </p>
+
+          <div class="small"><strong>Common things Turner Syndrome can involve:</strong></div>
+          <ul class="list small">
+            <li>Shorter height / growth differences</li>
+            <li>Differences in puberty or hormone levels</li>
+            <li>Fertility challenges for some people</li>
+            <li>Treatments that may include hormone therapy (doctor-guided) to support development and health</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WRAP-UP CARD -->
+    <div class="card" style="margin-top:16px;">
+      <h2>💗 Why characters help</h2>
+      <p class="small">
+        Polly and Turner make learning easier because they turn complicated health topics into friendly,
+        memorable lessons. Everyone’s body is different — and learning about that helps us support ourselves
+        and others with kindness.
+      </p>
+    </div>
+
+    <div class="footer">Polly says: “You’ve got this.” Turner says: “Facts only — and you’re slaying.” ✨</div>
+  </div>
+</body>
+</html>
