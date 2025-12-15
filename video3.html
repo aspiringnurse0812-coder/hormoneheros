@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Video 3 💗 | Symptoms</title>
+  <title>Video 3 💗 | Hormone Adventure</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- NAV BAR -->
   <div class="header">
     <div class="nav container">
       <div class="brand">
         <div class="logo">3</div>
         <div>
-          <div style="font-weight:900;">Video 3</div>
-          <div class="small">Symptoms & effects</div>
+          <div style="font-weight:900;">Hormone Adventure</div>
+          <div class="small">Video 3</div>
         </div>
       </div>
+
       <div class="navlinks">
         <a class="pill" href="index.html">Home</a>
-        <a class="pill" href="polly-tina.html">Polly & Tina</a>
+        <a class="pill" href="polly-tina.html">Polly & Turner</a>
         <a class="pill" href="faq.html">FAQ</a>
         <a class="pill" href="video1.html">Video 1</a>
         <a class="pill" href="video2.html">Video 2</a>
@@ -30,73 +33,109 @@
     </div>
   </div>
 
+  <!-- HERO -->
   <div class="container hero">
     <div class="heroCard">
-      <h1>Video 3: Symptoms & effects 💗</h1>
-      <p class="subtitle">Play the “Symptom Puzzle” by identifying common symptoms 🧩</p>
+      <h1>Video 3: Symptoms of Hormone Imbalances 💗</h1>
+      <p class="subtitle">
+        Learn how hormone imbalances can affect the body and what signs people may notice.
+      </p>
     </div>
 
+    <!-- CONTENT GRID -->
     <div class="grid">
+
+      <!-- VIDEO CARD -->
       <div class="card">
-        <h2>Video</h2>
-        <div class="videoWrap">
-          <video controls>
-            <source src="video3.mp4" type="video/mp4">
-            Your browser can’t play this video. Try converting to .mp4.
-          </video>
+        <h2>🎥 Video</h2>
+
+        <div style="
+          position:relative;
+          width:100%;
+          padding-top:56.25%;
+          border-radius:18px;
+          overflow:hidden;
+          border:1px solid rgba(255,79,163,.25);
+          background:#fff;">
+          <iframe
+            src="https://www.youtube.com/embed/4TcMVCjWGsQ"
+            title="Video 3: Symptoms of Hormone Imbalances"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
+
+        <a class="btn" href="https://www.youtube.com/watch?v=4TcMVCjWGsQ" target="_blank" rel="noopener" style="margin-top:10px;">
+          Watch on YouTube 🔗
+        </a>
       </div>
 
+      <!-- TRANSCRIPT + KEY INFO -->
       <div class="card">
-        <h2>Transcript</h2>
+        <h2>📝 Transcript</h2>
         <div class="small" style="white-space:pre-line; line-height:1.6;">
-In this video, we are going to talk about the effects and symptoms of hormone imbalances!
+Hormone imbalances can affect many parts of the body.
+Because hormones control different systems, symptoms can vary from person to person.
 
-Different types of imbalances can cause different symptoms, but there are a few that are more general.
+Some people may notice fatigue, mood changes, or changes in weight.
+Others may experience acne, hair changes, trouble sleeping, or irregular periods.
 
-This includes: unexplained weight gain or loss, fatigue, unexplained changes to the skin, hair loss, digestive issues, heart rate changes, extreme fatigue, trouble adapting to temperature, and so much more.
-
-Not only are there physical effects of hormone imbalances, but many emotional and cognitive ones as well.
-
-Things like mood swings, constantly being annoyed, anxiety, brain fog, bad memory and concentration, insomnia, and headaches are common symptoms of hormone imbalances.
-
-Other common effects of hormone imbalances include irregular menstrual cycles, fertility issues, urinary issues, gastrointestinal dysfunction, muscle pains, and high cholesterol.
-
-Remember, these symptoms vary depending on the imbalance, and everyone experiences!
+Not everyone has the same symptoms, and symptoms can range from mild to severe.
+If symptoms interfere with daily life, it’s important to talk to a healthcare professional.
         </div>
 
         <hr />
-        <h2>Key info</h2>
-        <div class="small">
-          Symptoms can be physical (fatigue, weight changes, skin/hair changes) and also emotional/cognitive
-          (mood swings, anxiety, brain fog, sleep issues).
+
+        <h2>⭐ Key Info</h2>
+        <div class="small" style="line-height:1.6;">
+          <ul>
+            <li>Symptoms depend on which hormones are affected.</li>
+            <li>Fatigue and mood changes are common signs.</li>
+            <li>Skin, hair, sleep, and weight can be affected.</li>
+            <li>Symptoms can be different for everyone.</li>
+            <li>Medical advice is important if symptoms persist.</li>
+          </ul>
         </div>
       </div>
+
     </div>
 
+    <!-- GAME CARD -->
     <div class="card" id="gameV3" style="margin-top:16px;">
-      <h2>🧩 Symptom Puzzle</h2>
-      <div class="small">Check all the symptoms that can be linked to hormone imbalance (based on this lesson).</div>
+      <h2>🎮 Game: Symptom Match</h2>
+      <p class="small">
+        Decide whether each symptom could be linked to a hormone imbalance.
+      </p>
 
       <div class="game">
         <div class="gameOut"></div>
-        <button class="btn finishBtn" style="margin-top:10px;">Finish Puzzle ✨</button>
         <div class="toast result">Your score will appear here 💗</div>
       </div>
     </div>
 
-    <div class="footer">Next up: Video 4 → treatment + why it matters 💗</div>
+    <!-- NEXT BUTTON -->
+    <div class="card" style="margin-top:16px; text-align:center;">
+      <h2>Ready for the next lesson?</h2>
+      <p class="small">Continue to Video 4 to learn about treatments.</p>
+      <a class="btn" href="video4.html">Go to Video 4 →</a>
+    </div>
+
+    <div class="footer">
+      Polly says: “Listening to your body is important.”  
+      Turner says: “Symptoms = signals. Don’t ignore them.” 💅✨
+    </div>
   </div>
 
+  <!-- GAME SCRIPT -->
   <script src="site.js"></script>
   <script>
-    setupChecklistGame("gameV3", [
-      "Unexplained weight gain or loss",
-      "Fatigue",
-      "Hair loss",
-      "Digestive issues",
-      "Mood swings / anxiety / brain fog",
-      "Random superpowers (not a symptom)"
+    setupTrueFalseGame("gameV3", [
+      { q: "Hormone imbalances can affect mood and energy levels.", a: true },
+      { q: "Everyone experiences the same hormone imbalance symptoms.", a: false },
+      { q: "Skin and hair changes can be linked to hormones.", a: true },
+      { q: "Hormone imbalances only affect one part of the body.", a: false },
+      { q: "Seeing a doctor can help if symptoms interfere with daily life.", a: true }
     ]);
   </script>
 </body>
