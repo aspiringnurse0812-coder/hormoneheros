@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Video 1 💗 | What is a Hormone Imbalance?</title>
+  <title>Video 1 💗 | Hormone Adventure</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- NAV BAR -->
   <div class="header">
     <div class="nav container">
       <div class="brand">
         <div class="logo">1</div>
         <div>
-          <div style="font-weight:900;">Video 1</div>
-          <div class="small">What is a hormone imbalance?</div>
+          <div style="font-weight:900;">Hormone Adventure</div>
+          <div class="small">Video 1</div>
         </div>
       </div>
+
       <div class="navlinks">
         <a class="pill" href="index.html">Home</a>
-        <a class="pill" href="polly-tina.html">Polly & Tina</a>
+        <a class="pill" href="polly-tina.html">Polly & Turner</a>
         <a class="pill" href="faq.html">FAQ</a>
         <a class="pill" href="video1.html">Video 1</a>
         <a class="pill" href="video2.html">Video 2</a>
@@ -30,72 +33,105 @@
     </div>
   </div>
 
+  <!-- HERO -->
   <div class="container hero">
     <div class="heroCard">
-      <h1>Video 1: What is a hormone imbalance? 💗</h1>
-      <p class="subtitle">Watch → read the transcript → play the snowflake True/False game ❄️</p>
+      <h1>Video 1: What is a Hormone Imbalance? 💗</h1>
+      <p class="subtitle">
+        Learn what hormones are, what an imbalance means, and why even small changes can affect your body.
+      </p>
     </div>
 
+    <!-- CONTENT GRID -->
     <div class="grid">
+
+      <!-- VIDEO CARD -->
       <div class="card">
-        <h2>Video</h2>
-        <div class="videoWrap">
-          <video controls>
-           <source src="video1.mp4" type="video/mp4">
-            Your browser can’t play this video. Try converting to .mp4.
-          </video>
+        <h2>🎥 Video</h2>
+
+        <div style="
+          position:relative;
+          width:100%;
+          padding-top:56.25%;
+          border-radius:18px;
+          overflow:hidden;
+          border:1px solid rgba(255,79,163,.25);
+          background:#fff;">
+          <iframe
+            src="https://www.youtube.com/embed/lFxK95Zv1bo"
+            title="Video 1: What is a Hormone Imbalance?"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
-        <div class="badges">
-          <div class="badge">⏱️ ~30s</div>
-          <div class="badge">🎮 True/False Snowflake Game</div>
-        </div>
+
+        <a class="btn" href="https://youtube.com/watch?v=lFxK95Zv1bo" target="_blank" rel="noopener" style="margin-top:10px;">
+          Watch on YouTube 🔗
+        </a>
       </div>
 
+      <!-- TRANSCRIPT + KEY INFO CARD -->
       <div class="card">
-        <h2>Transcript</h2>
+        <h2>📝 Transcript</h2>
         <div class="small" style="white-space:pre-line; line-height:1.6;">
-You may be asking yourself, What is a hormone imbalance? Why should I care?
+Hormones are chemical messengers made by glands in your body.
+They travel through your blood and tell organs what to do and when to do it.
 
-Hormones affect our entire bodies, influencing our mood, food processing, energy levels, growth, and much more. Pretty much anything you can think of in our bodies is influenced by hormones!
+A hormone imbalance happens when your body has too much or too little of a hormone.
+Even small hormone changes can affect things like energy, mood, sleep, growth, and metabolism.
 
-When there is an imbalance, this means that the body has too much or too little of one or more hormones.
-
-So you can only imagine what could happen if there is an imbalance or improper amount of hormones and what that could do to our bodies.
-
-This is what we will discuss throughout the rest of our journey on our website.
-
-Have so much fun learning about hormones!
+Hormone imbalances can be temporary or long-term, and treatment depends on the cause.
         </div>
 
         <hr />
-        <h2>Key info</h2>
-        <div class="small">
-          Hormones are chemical messengers. If levels are too high or too low, your body’s “messages” can get mixed up,
-          which can affect many systems (energy, mood, growth, and more).
+
+        <h2>⭐ Key Info</h2>
+        <div class="small" style="line-height:1.6;">
+          <ul>
+            <li>Hormones = chemical messengers that control many body functions.</li>
+            <li>An imbalance = too much or too little of one or more hormones.</li>
+            <li>Small changes can affect mood, energy, weight, skin, and more.</li>
+            <li>Causes and treatments can be different for each person.</li>
+          </ul>
         </div>
       </div>
+
     </div>
 
+    <!-- GAME CARD -->
     <div class="card" id="gameV1" style="margin-top:16px;">
-      <h2>❄️ Snowflake True/False Game</h2>
-      <div class="small">Click your answers. Try to get a perfect sparkle score ✨</div>
+      <h2>🎮 Game: True or False</h2>
+      <p class="small">Pick whether each statement is true or false.</p>
 
       <div class="game">
         <div class="gameOut"></div>
-        <div class="toast result">Score will appear here 💗</div>
+        <div class="toast result">Your score will appear here 💗</div>
       </div>
     </div>
 
-    <div class="footer">Next up: Video 2 → why imbalances happen 💗</div>
+    <!-- NEXT BUTTON -->
+    <div class="card" style="margin-top:16px; text-align:center;">
+      <h2>Ready for the next lesson?</h2>
+      <p class="small">When you’re done, continue to Video 2.</p>
+      <a class="btn" href="video2.html">Go to Video 2 →</a>
+    </div>
+
+    <div class="footer">
+      Polly says: “You’re learning the basics!”  
+      Turner says: “Foundational knowledge = SLAY.” 💅✨
+    </div>
   </div>
 
+  <!-- GAME SCRIPT -->
   <script src="site.js"></script>
   <script>
     setupTrueFalseGame("gameV1", [
-      { text: "Hormones affect mood, energy, growth, and more.", correct: true },
-      { text: "A hormone imbalance means hormones are always too high.", correct: false },
-      { text: "Even one hormone being off can affect your body.", correct: true },
-      { text: "Hormones only matter for puberty.", correct: false }
+      { q: "Hormones are chemical messengers in the body.", a: true },
+      { q: "A hormone imbalance only affects mood.", a: false },
+      { q: "Even small hormone changes can affect your body.", a: true },
+      { q: "Hormone imbalances are always permanent.", a: false },
+      { q: "Different causes can lead to different treatments.", a: true }
     ]);
   </script>
 </body>
