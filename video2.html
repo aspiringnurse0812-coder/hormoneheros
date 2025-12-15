@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Video 2 💗 | Why do imbalances happen?</title>
+  <title>Video 2 💗 | Hormone Adventure</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- NAV BAR -->
   <div class="header">
     <div class="nav container">
       <div class="brand">
         <div class="logo">2</div>
         <div>
-          <div style="font-weight:900;">Video 2</div>
-          <div class="small">Identifying the problem</div>
+          <div style="font-weight:900;">Hormone Adventure</div>
+          <div class="small">Video 2</div>
         </div>
       </div>
+
       <div class="navlinks">
         <a class="pill" href="index.html">Home</a>
-        <a class="pill" href="polly-tina.html">Polly & Tina</a>
+        <a class="pill" href="polly-tina.html">Polly & Turner</a>
         <a class="pill" href="faq.html">FAQ</a>
         <a class="pill" href="video1.html">Video 1</a>
         <a class="pill" href="video2.html">Video 2</a>
@@ -30,81 +33,121 @@
     </div>
   </div>
 
+  <!-- HERO -->
   <div class="container hero">
     <div class="heroCard">
-      <h1>Video 2: Why do hormone imbalances happen? 💗</h1>
-      <p class="subtitle">Tap the “Hormone Emergency” answers 🚨</p>
+      <h1>Video 2: What Causes Hormone Imbalances? 💗</h1>
+      <p class="subtitle">
+        Learn about the different factors that can cause hormone levels to change in the body.
+      </p>
     </div>
 
+    <!-- CONTENT GRID -->
     <div class="grid">
+
+      <!-- VIDEO CARD -->
       <div class="card">
-        <h2>Video</h2>
-        <div class="videoWrap">
-          <video controls>
-           <source src="video2.mp4" type="video/mp4">
-            Your browser can’t play this video. Try converting to .mp4.
-          </video>
+        <h2>🎥 Video</h2>
+
+        <div style="
+          position:relative;
+          width:100%;
+          padding-top:56.25%;
+          border-radius:18px;
+          overflow:hidden;
+          border:1px solid rgba(255,79,163,.25);
+          background:#fff;">
+          <iframe
+            src="https://www.youtube.com/embed/GIIntCzvs8U"
+            title="Video 2: Causes of Hormone Imbalances"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
-        <div class="badges">
-          <div class="badge">⏱️ ~57s</div>
-          <div class="badge">🎮 Hormone Emergency Quiz</div>
-        </div>
+
+        <a class="btn" href="https://www.youtube.com/watch?v=GIIntCzvs8U" target="_blank" rel="noopener" style="margin-top:10px;">
+          Watch on YouTube 🔗
+        </a>
       </div>
 
+      <!-- TRANSCRIPT + KEY INFO -->
       <div class="card">
-        <h2>Transcript</h2>
+        <h2>📝 Transcript</h2>
         <div class="small" style="white-space:pre-line; line-height:1.6;">
-Now we’re going to talk about hormones — tiny messengers in your body that tell everything what to do. But sometimes these messages get mixed up, and that’s called a hormone imbalance!
+Hormone imbalances can happen for many reasons.
+Sometimes a gland doesn’t work properly, which can affect how much hormone is released.
 
-This can happen for a few reasons:
-- Stress — when you worry a lot, your body makes extra ‘stress hormone’ and it throws other hormones off.
-- Food & health — eating poorly or being way under or overweight can confuse your hormones.
-- Growing up — during puberty, pregnancy, or getting older, hormones naturally change.
-- Environment — certain chemicals or toxins around us can also affect them.
-- Medical reasons — things like diabetes or PCOS, or even certain medications, can cause hormone mix-ups too.
+Stress can increase cortisol levels, which may disrupt other hormones.
+Diet, body weight, and gut health can also affect hormone balance.
 
-So remember: hormones are helpers, and keeping our bodies healthy keeps them healthy too!
+Hormone changes are normal during life stages like puberty and pregnancy.
+Certain medical conditions, medications, and environmental factors can also play a role.
         </div>
 
         <hr />
-        <h2>Key info</h2>
-        <div class="small">
-          Common causes include stress, nutrition/weight changes, natural life stages, environmental exposures,
-          and medical conditions/medications.
+
+        <h2>⭐ Key Info</h2>
+        <div class="small" style="line-height:1.6;">
+          <ul>
+            <li>Faulty endocrine glands can cause hormone imbalances.</li>
+            <li>Chronic stress can disrupt hormone levels.</li>
+            <li>Diet, weight, and gut health affect hormones.</li>
+            <li>Life stages like puberty and pregnancy cause natural changes.</li>
+            <li>Medications and medical conditions can also affect hormones.</li>
+          </ul>
         </div>
       </div>
+
     </div>
 
+    <!-- GAME CARD -->
     <div class="card" id="gameV2" style="margin-top:16px;">
-      <h2>🚨 Hormone Emergency Game</h2>
-      <div class="small">Pick the best answer for each “emergency call.”</div>
+      <h2>🎮 Game: Multiple Choice</h2>
+      <p class="small">Choose the correct answer for each question.</p>
 
       <div class="game">
         <div class="gameOut"></div>
-        <div class="toast result">Score will appear here 💗</div>
+        <div class="toast result">Your score will appear here 💗</div>
       </div>
     </div>
 
-    <div class="footer">Next up: Video 3 → symptoms and effects 💗</div>
+    <!-- NEXT BUTTON -->
+    <div class="card" style="margin-top:16px; text-align:center;">
+      <h2>Ready for the next lesson?</h2>
+      <p class="small">Continue to Video 3 to learn about symptoms.</p>
+      <a class="btn" href="video3.html">Go to Video 3 →</a>
+    </div>
+
+    <div class="footer">
+      Polly says: “Understanding causes helps us understand solutions.”  
+      Turner says: “Context matters — facts secured.” 💅✨
+    </div>
   </div>
 
+  <!-- GAME SCRIPT -->
   <script src="site.js"></script>
   <script>
-    setupTapQuiz("gameV2", [
+    setupMultipleChoiceGame("gameV2", [
       {
-        prompt: "Someone is constantly stressed — what might happen?",
-        choices: ["Their body can make extra stress hormone and throw others off", "Nothing changes", "Only hair color changes"],
-        correctIndex: 0
+        q: "Which of the following can cause a hormone imbalance?",
+        options: ["Stress", "Diet", "Life stages", "All of the above"],
+        a: 3
       },
       {
-        prompt: "Which life stage can naturally change hormones?",
-        choices: ["Puberty", "Sleeping", "Blinking"],
-        correctIndex: 0
+        q: "Which hormone often increases during chronic stress?",
+        options: ["Insulin", "Estrogen", "Cortisol", "Melatonin"],
+        a: 2
       },
       {
-        prompt: "Which can cause hormone mix-ups medically?",
-        choices: ["Diabetes or PCOS", "Having hobbies", "Listening to music"],
-        correctIndex: 0
+        q: "Which life stage naturally changes hormone levels?",
+        options: ["Puberty", "Pregnancy", "Both A and B", "Neither"],
+        a: 2
+      },
+      {
+        q: "Which factor can affect hormone balance?",
+        options: ["Medications", "Medical conditions", "Environmental factors", "All of the above"],
+        a: 3
       }
     ]);
   </script>
