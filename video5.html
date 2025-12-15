@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Video 5 💗 | Hormone Hero</title>
+  <title>Video 5 💗 | Hormone Adventure</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,7 +15,7 @@
         <div class="logo">5</div>
         <div>
           <div style="font-weight:900;">Hormone Adventure</div>
-          <div class="small">Be a Hormone Hero</div>
+          <div class="small">Video 5</div>
         </div>
       </div>
 
@@ -38,36 +38,51 @@
     <div class="heroCard">
       <h1>Video 5: Be a Hormone Hero 💗</h1>
       <p class="subtitle">
-        Small daily habits can make a big difference in supporting healthy hormone balance.
+        Learn the daily habits that support healthy hormone balance — then play the Hormone Hero game!
       </p>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- CONTENT GRID -->
     <div class="grid">
 
-      <!-- VIDEO -->
+      <!-- VIDEO CARD -->
       <div class="card">
         <h2>🎥 Video</h2>
-        <div class="videoWrap">
-          <video controls>
-            <source src="video5.mp4" type="video/mp4">
-            Your browser does not support this video.
-          </video>
+
+        <div style="
+          position:relative;
+          width:100%;
+          padding-top:56.25%;
+          border-radius:18px;
+          overflow:hidden;
+          border:1px solid rgba(255,79,163,.25);
+          background:#fff;">
+          <iframe
+            src="https://www.youtube.com/embed/K4RCVm1tLFs"
+            title="Video 5: Be a Hormone Hero"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
         </div>
+
+        <a class="btn" href="https://www.youtube.com/watch?v=K4RCVm1tLFs" target="_blank" rel="noopener" style="margin-top:10px;">
+          Watch on YouTube 🔗
+        </a>
       </div>
 
-      <!-- TRANSCRIPT + INFO -->
+      <!-- TRANSCRIPT + KEY INFO -->
       <div class="card">
         <h2>📝 Transcript</h2>
         <div class="small" style="white-space:pre-line; line-height:1.6;">
 Now that we’ve learned what hormones are, why imbalances happen, and how they’re treated,
-let’s talk about something super important — how YOU can help keep your hormones happy!
+let’s talk about how YOU can support healthy hormone balance.
 
-You can support your hormones by getting good sleep, eating balanced meals, staying active,
-and managing stress in healthy ways.
+Healthy habits like getting enough sleep, eating balanced meals, moving your body,
+and managing stress can help your body’s hormone messaging system work properly.
 
-And remember: if something ever feels off, it’s always okay to ask a trusted adult
-or a healthcare professional for help.
+And remember: if something feels off for a long time, it’s always okay to talk to a trusted adult
+or a healthcare professional.
 
 Congratulations — you’re officially a Hormone Hero!
         </div>
@@ -75,40 +90,41 @@ Congratulations — you’re officially a Hormone Hero!
         <hr />
 
         <h2>⭐ Key Info</h2>
-        <div class="small">
-          Healthy habits help your body’s hormone messaging system work properly.
-          Supporting your hormones supports your overall health.
+        <div class="small" style="line-height:1.6;">
+          <ul>
+            <li>Daily habits can support hormone balance.</li>
+            <li>Sleep, food, movement, and stress all affect hormones.</li>
+            <li>Support and treatment should be guided by a healthcare professional when needed.</li>
+            <li>Listening to your body is a smart health skill.</li>
+          </ul>
         </div>
       </div>
+
     </div>
 
-    <!-- GAME -->
+    <!-- HORMONE HERO GAME (MATCHES SITE STYLE) -->
     <div class="card" id="gameV5" style="margin-top:16px;">
       <h2>🦸‍♀️ Hormone Hero Game</h2>
       <p class="small">
-        Check all the habits that help support healthy hormone balance.
+        Check all the habits that help support healthy hormone balance, then click the button to see your hero score!
       </p>
 
       <div class="game">
         <div class="gameOut"></div>
-        <button class="btn finishBtn" style="margin-top:10px;">
-          Show My Hero Score ✨
-        </button>
+        <button class="btn finishBtn" style="margin-top:10px;">Show My Hero Score ✨</button>
         <div class="toast result">Your score will appear here 💗</div>
       </div>
     </div>
 
-    <!-- NEXT -->
+    <!-- FINISH BUTTON -->
     <div class="card" style="margin-top:16px; text-align:center;">
       <h2>✨ You did it!</h2>
-      <p class="small">
-        You’ve completed the Hormone Adventure. Click below to wrap things up.
-      </p>
+      <p class="small">You finished all 5 videos. Click below to wrap up the project.</p>
       <a class="btn" href="closing.html">Finish the Journey 💗</a>
     </div>
 
     <div class="footer">
-      Polly says: “You’re taking care of your body!”  
+      Polly says: “Taking care of yourself matters.”  
       Turner says: “That’s a SLAY.” 💅✨
     </div>
   </div>
